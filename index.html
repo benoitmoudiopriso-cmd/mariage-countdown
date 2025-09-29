@@ -14,7 +14,7 @@
       align-items: center;
       min-height: 100vh;
       margin: 0;
-      background: url('https://i.ibb.co/2WxxhND/flowers-bg.jpg') center/cover no-repeat;
+      background-color: #fffaf8; /* Fond doux sans image */
       color: #333;
     }
     h1 {
@@ -22,14 +22,17 @@
       margin-bottom: 10px;
       text-align: center;
       color: #5a2a2a;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
     }
     #wix-countdown {
       text-align: center;
-      background: rgba(255,255,255,0.85);
+      background: rgba(255,255,255,0.9);
       padding: 24px;
       border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       font-size: 1.5em;
     }
   </style>
@@ -58,11 +61,4 @@
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      document.getElementById("wix-countdown").innerHTML =
-        days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
-    }
-
-    setInterval(countdown, 1000);
-  </script>
-</body>
-</html>
+      document.getElementById("w
