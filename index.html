@@ -35,15 +35,32 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       font-size: 1.5em;
     }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #5a2a2a;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #7c3b3b;
+    }
   </style>
 </head>
 <body>
   <!-- Texte d’introduction -->
-  <h1>Nous nous marions le 11 avril 2026 💍</h1>
+  <h1>Nous nous marions le 11 avril 2026</h1>
   <p>Rejoignez-nous pour célébrer ce jour unique !</p>
 
   <!-- Compte à rebours -->
   <div id="wix-countdown"></div>
+
+  <!-- Lien RSVP -->
+  <a href="TON_LIEN_WIX_RSVP_ICI" target="_blank" class="button">Confirmer ma présence</a>
 
   <script>
     function countdown() {
@@ -69,3 +86,5 @@
   </script>
 </body>
 </html>
+
+
